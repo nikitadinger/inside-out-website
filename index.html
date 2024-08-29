@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inside Out: A Guide to Biohacking Your Life</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="hero">
+            <img src="book-cover.jpg" alt="Inside Out Book Cover" class="book-cover">
+            <h1>Unlock Your Potential: Master Your Life Through Gut Biohacking</h1>
+            <p>Discover how understanding your gut microbiota can elevate your health and performance.</p>
+            <a href="https://www.amazon.com" class="btn">Pre-order Now on Amazon</a>
+            <div id="countdown">
+                <p>Countdown to Launch: <span id="timer"></span></p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="#about-book">About the Book</a></li>
+            <li><a href="#about-author">About the Author</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#sneak-peek">Sneak Peek</a></li>
+            <li><a href="#pre-order">Pre-order and Offers</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- About the Book Section -->
+    <section id="about-book">
+        <h2>About the Book</h2>
+        <p>"Inside Out: A Guide to Biohacking Your Life by Understanding Your Gut Microbiota" is a groundbreaking guide that reveals how mastering your gut health can unlock peak mental and physical performance. Dr. Nikita Dinger combines cutting-edge scientific research with practical, actionable strategies to help you optimize your gut microbiome, enhancing everything from mental clarity and emotional resilience to energy levels and immunity. This book empowers you to take control of your health with personalized biohacking techniques, making sustainable, long-term improvements to your overall well-being.</p>
+    </section>
+
+    <!-- About the Author Section -->
+    <section id="about-author">
+        <h2>About the Author</h2>
+        <p>Dr. Nikita Dinger is an accomplished researcher and entrepreneur with a Ph.D. in Cancer Biology. With experience working alongside Nobel Prize-winning scientists in top international laboratories, she has become a leading expert in gut microbiome research and biohacking. As the founder of BioMeBar, a wellness company focused on AI-backed gut analysis, Dr. Dinger is dedicated to making scientific insights accessible and actionable for all, empowering people to take control of their health through gut biohacking. Currently based in California's Bay Area, she continues to push the boundaries of microbiome science to improve everyday health.</p>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <h2>What People Are Saying</h2>
+        <div class="testimonial">
+            <p>“A Transformative Read! 'Inside Out' is a game-changer. Dr. Dinger’s expertise and passion shine through every page. I’ve never felt more in control of my health and well-being.”</p>
+            <p class="author">– Jane Doe, Wellness Coach</p>
+        </div>
+        <div class="testimonial">
+            <p>“Practical and Insightful! This book offers more than just theory; it provides actionable steps that anyone can follow. Dr. Dinger’s approach to gut health is both refreshing and enlightening.”</p>
+            <p class="author">– John Smith, Biohacker and Fitness Enthusiast</p>
+        </div>
+        <div class="testimonial">
+            <p>“Empowering and Enlightening! I had no idea how much my gut health was affecting my daily life until I read 'Inside Out.' Dr. Dinger breaks down complex science into easy-to-understand language and provides tools that have genuinely transformed how I feel every day.”</p>
+            <p class="author">– Emily Brown, Nutritionist and Health Blogger</p>
+        </div>
+    </section>
+
+    <!-- Sneak Peek Section -->
+    <section id="sneak-peek">
+        <h2>Sneak Peek</h2>
+        <p>Get a glimpse into the transformative journey of gut biohacking with a preview from 'Inside Out'. Click the button below to read an exclusive excerpt!</p>
+        <a href="#" class="btn">Read Excerpt</a> <!-- Link to the excerpt or a PDF preview -->
+    </section>
+
+    <!-- Pre-order and Offers Section -->
+    <section id="pre-order">
+        <h2>Pre-order Now and Get Exclusive Offers</h2>
+        <p>Pre-order your copy of 'Inside Out' on Amazon today and get exclusive access to a live webinar with Dr. Dinger, where she'll answer your questions on gut health and biohacking!</p>
+        <a href="https://www.amazon.com" class="btn">Pre-order Now</a>
+    </section>
+
+    <!-- Join the Community Section -->
+    <section id="join-community">
+        <h2>Join the Community</h2>
+        <p>Sign up to receive the latest updates, tips, and exclusive content from Dr. Nikita Dinger directly to your inbox.</p>
+        <form action="#" method="POST">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Sign Up</button>
+        </form>
+        <div class="social-media">
+            <a href="https://instagram.com/dingernikita" target="_blank">Instagram</a>
+            <a href="https://twitter.com/dingernikita" target="_blank">Twitter</a>
+            <a href="https://linkedin.com/dingernikita" target="_blank">LinkedIn</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>If you have any questions or would like more information, please fill out the form below:</p>
+        <form action="#" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Inside Out by Dr. Nikita Dinger. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Countdown Timer -->
+    <script>
+        // Countdown Timer Script
+        const countdown = () => {
+            const launchDate = new Date("September 21, 2024 00:00:00").getTime();
+            const now = new Date().getTime();
+            const gap = launchDate - now;
+
+            const second = 1000;
+            const minute = second * 60;
+            const hour = minute * 60;
+            const day = hour * 24;
+
+            const textDay = Math.floor(gap / day);
+            const textHour = Math.floor((gap % day) / hour);
+            const textMinute = Math.floor((gap % hour) / minute);
+            const textSecond = Math.floor((gap % minute) / second);
+
+            document.getElementById("timer").innerText = `${textDay}d ${textHour}h ${textMinute}m ${textSecond}s`;
+        };
+
+        setInterval(countdown, 1000);
+    </script>
+</body>
+</html>
